@@ -5,10 +5,14 @@ Overlay qui se connecte à une chaine Twitch et réagit à une commande pour fai
 
 Dans gaugeOverlayCommand.html ouvert avec un éditeur de code, écrivez votre nom de chaine dans la balise div avec l'id **channel**, le nom que vous souhaitez utiliser dans votre commande dans la balise à l'id **command** et corrigez si besoin la valeur de maxi.
 
-Glissez le fichier gaugeOverlayCommand.html dans votre OBS.
+Glissez le fichier gaugeOverlayCommand.html dans votre OBS et donnez-lui la taille de 100 * 1080.
 
 ## Utilisation
 
 Sur votre chaine Twitch, écrivez le nom de votre commande précédé d'un point d'exclamation. Ex : *!command*. La jauge commence alors à s'incrémenter.
 
 Vous pouvez décrémenter la jauge en ajouter le signe moins à votre commande. Ex : *!command-*.
+
+### Licence
+
+Nous utilisons ici la librairie [ConfyJS](https://github.com/instafluff/ComfyJS).

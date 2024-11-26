@@ -20,8 +20,16 @@ let drawCanva = (ctx, valueMax, value) => {
     ctx.fillStyle = lineaire;
     // --------------------------------------------
     let height = canva.height / valueMax * value;
-    let start = canva.height - height;
-    ctx.fillRect(0, start, canva.width, canva.height)
+    let start = canva.height - height +50;
+    ctx.beginPath();
+    ctx.moveTo(0, start);
+    ctx.lineTo(0, canva.height);
+    ctx.lineTo(canva.width, canva.height);
+    ctx.lineTo(canva.width, start);
+    ctx.lineTo(0, start);
+    ctx.arc(canva.width-50, start, 50, Math.PI, 2*Math.PI)
+    ctx.closePath();
+    ctx.fill();
 }
 
-// drawCanva(ctx, valueMax, 2);
+//drawCanva(ctx, valueMax, 20);

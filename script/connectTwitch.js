@@ -7,6 +7,8 @@ drawCanva(ctx, valueMax, valueCount);
 
 ComfyJS.onCommand = ( user, command, message, flags, extra ) => {
     if( command == commandName ) {
+        console.log("+");
+        
         valueCount++;
         drawCanva(ctx, valueMax, valueCount);
     }

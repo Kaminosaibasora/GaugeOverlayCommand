@@ -1,3 +1,7 @@
 #channel, #command, #maxi {
     display: none;
 }
+
+div {
+    padding-top: 5px;
+}
